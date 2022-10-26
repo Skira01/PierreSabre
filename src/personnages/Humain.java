@@ -2,9 +2,9 @@ package personnages;
 
 public class Humain {
 
-	private String nom;
-	private String boissonPreferee;
-	private int qttArgent;
+	protected String nom;
+	protected String boissonPreferee;
+	protected int qttArgent;
 	
     public Humain(String nom, String boissonPreferee, int qttArgent) {
         this.nom = nom;
@@ -24,7 +24,7 @@ public class Humain {
 		return qttArgent;
 	}
 	
-    public void parler(String texte) {
+    protected void parler(String texte) {
         System.out.println("("+nom+")- "+texte);
     }
 
