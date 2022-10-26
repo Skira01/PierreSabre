@@ -7,9 +7,10 @@ public class Commercant extends Humain{
 		super(nom,"du thé",qttArgent);
 	}
 	
-	public void seFaireExtorquer() {
+	public int seFaireExtorquer() {
 		qttArgent = 0;
 		parler("J'ai tout perdu! Le monde est vraiment trop injuste...");
+		return qttArgent;
 	}
 	
 	public void recevoir(int monnaie) {
